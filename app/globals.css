@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 0%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 351 100% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 351 100% 42%;
+  --radius: 0.5rem;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.btn-primary {
+  @apply bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#E00B41] transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-white text-black border border-gray-300 font-semibold py-3 px-6 rounded-lg hover:border-black transition-colors duration-200;
+}
+
+.input-primary {
+  @apply border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-xl overflow-hidden;
+}
+
+.navbar {
+  @apply flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200;
+}
+
+.navbar-logo {
+  @apply text-primary text-3xl font-bold;
+}
+
+.navbar-links {
+  @apply flex items-center space-x-6;
+}
+
+.navbar-link {
+  @apply text-gray-500 hover:text-gray-800 transition-colors duration-200;
+}
